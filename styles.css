@@ -60,3 +60,17 @@ h1{
 button.grid-item:hover{
     background-color:#a4374e;
 }
+.reset{
+    display:flex;
+    margin-top:50px;
+    gap: 10px;
+    
+}
+.reset > button{
+    width:10rem;
+    height:4rem;
+    font-family:"Yesterday-Morning";
+    font-size:larger;
+    border-radius:10px;
+    background-color: #ffddb8;
+}
