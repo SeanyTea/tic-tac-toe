@@ -1,0 +1,62 @@
+*{
+    margin:0;
+    padding:0;
+
+}
+
+@font-face{
+    font-family:'Yesterday-Morning';
+    src: url('./fonts/yesterday_morning.otf')
+}
+body{
+    background:#fffbff;
+}
+.container{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    margin:50px;
+}
+h1{
+    font-family:'Yesterday-Morning';
+}
+.players>ul{
+    display:flex;
+    justify-content:space-around;
+    gap:50px;
+    
+    list-style:None;
+}
+.players>ul>li{
+    display:flex;
+    text-align:center;
+    align-items:center;
+    justify-content:center;
+    width:15rem;
+    height:3rem;
+    border-radius:20px; 
+    color:#201a1b
+}
+.players>ul>li.active{
+    background-color:#ffddb8;
+    color:#2a1700;
+}
+.gameBoard{
+    display:grid;
+    margin-top:4rem;
+    width:30rem;
+    height:30rem;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-rows:1fr 1fr 1fr;
+    gap:10px;
+}
+.grid-item{
+    border-radius:20px;
+    background:#ffd9dd;
+    border:none;
+    font-size:5rem;
+    font-family:'Yesterday-Morning';
+}
+button.grid-item:hover{
+    background-color:#a4374e;
+}
